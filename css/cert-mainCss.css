@@ -147,7 +147,7 @@ header {
     background: black;
     font-weight: 700;
     height: 800px;
-    padding: 200px 48px 0;
+    padding: 150px 48px 0;
     font-size: 40px;
     
     width: 1140px;
@@ -241,6 +241,9 @@ header {
 
 
 /* wrap2 */
+.wrap2 {
+    height: 700px;
+}
 .wrap2 .together {
     text-align: center;
     margin: 0 auto;
@@ -254,6 +257,15 @@ header {
     color: #3182F6;
     font-size: 68px;
 }
+
+.wrap2 .two img {
+    float: left;
+    width: 130px;
+    height: 130px;
+    border-radius: 65px;
+    margin: 9px;
+}
+
 .wrap2 .three .two .image {
     display: flex;
     justify-content: space-evenly;
@@ -476,6 +488,7 @@ footer .f-content .yak {
 }
 
 footer .f-content .yak li {
+    text-align: center;
     box-sizing: border-box;
     font-size: 16px;
     width: 140px;
