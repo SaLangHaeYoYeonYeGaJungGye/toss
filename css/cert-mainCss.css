@@ -1,9 +1,71 @@
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 
+@media (max-width: 1190) {
+    body {
+        width: 100%;
+    }
+    .wrap1 {
+        width: 100vw;
+    }
+
+    .wrap2 .two .image{
+        display: none;
+    }
+}
+
+@media (max-width: 1023px){
+    /* body {
+        width: 100vw;
+        margin: 0 auto;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+    } */
+    header {
+        width: 100vw;
+    }
+    .wrap1 .one .w1c {
+        position: relative;
+    }
+    .wrap1 .one img {
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top: 350px;
+        right: 200px;
+        box-sizing: inherit;
+    }
+}
+
+@media (min-width: 100px) and (max-width: 639px){
+    header .mo{
+        display: block;
+        background-color: skyblue;
+    }
+    header .nav>.gnb{
+        display: none;
+    }
+
+    
+}
+header {
+    position: relative;
+}
+header .mo {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+header .mo img{
+    width: 60px;
+}
 header {
     padding-left: 20px;
     font-size: 16px;
-    width: 100%;
+    width: 100vw;
     /* background-color: tomato; */
     height: 60px;
     position: fixed;
@@ -50,7 +112,7 @@ header .nav .gnb {
 header .nav .gnb li a {
     padding: 8px 10px;
     font-size: 15px;
-    line-height: 20px;
+    line-height: 1.5;
     cursor: pointer;
     font-weight: 600;
     margin-right: 10px;
@@ -144,7 +206,7 @@ header {
 
 .wrap1 .one {
     margin: 0 auto;
-    background: black;
+    /* background: black; */
     font-weight: 700;
     height: 800px;
     padding: 150px 48px 0;
@@ -242,7 +304,8 @@ header {
 
 /* wrap2 */
 .wrap2 {
-    height: 700px;
+    position: relative;
+    background: #f9fafb;
 }
 .wrap2 .together {
     text-align: center;
@@ -266,27 +329,43 @@ header {
     margin: 9px;
 }
 
-.wrap2 .three .two .image {
+.wrap2 .two .image {
     display: flex;
     justify-content: space-evenly;
 }
+
+
 
 .wrap2 .three {
     width: 1140px;
     margin: 0 auto;
     padding: 0 48px;
+    position: absolute;
+    bottom: 0;
+    background: #f9fafb;
 }
-
-.wrap2 .three .graph {
+.three {
+    width: 100vw;
+    background: #f9fafb;
+}
+.three .graph {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     font-size: 35px;
     font-weight: 700;
     line-height: 1.5;
+    padding: 0 48px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 284px;
+    
+    
 }
-
-.wrap2 .three .graph .g {
+.three .graph {
+    width: 1140px;
+}
+.three .graph .g {
     width: 400px;
     padding-top: 77px;
     padding-left: 40px;
@@ -294,6 +373,11 @@ header {
     line-height: 1.5;
 
 }
+
+
+
+
+
 
 .wrap3 {
     width: 1140px;
@@ -442,15 +526,22 @@ footer {
 }
 
 footer .f-content {
-    width: 1080px;
+    width: 1064px;
     margin: 0 auto;
     /* background-color: skyblue; */
     flex-wrap: wrap;
     display: flex;
     padding: 50px 0 100px;
-
 }
 
+footer .f-content .주 li a{
+    text-decoration: none;
+}
+
+footer .f-content .주 li a:hover{
+    color: #0064FF;
+    font-weight: 600;
+}
 footer .f-content ul {
     flex-wrap: wrap;
     margin-bottom: 30px;
@@ -469,12 +560,13 @@ footer .f-content ul a {
     text-decoration: none;
     line-height: 1.5;
     height: 30px;
-    color: lightgray;
+    color: #6b7684;
 
 }
 
 footer .f-content ul li {
-    color: lightgray;
+    color: #6b7684;
+    font-weight: 500;
 }
 
 footer .f-content ul a:hover {
@@ -485,12 +577,14 @@ footer .f-content .yak {
     padding: 24px 0 30px;
     flex-wrap: wrap;
     display: flex;
+    padding-left: 35px;
+    font-weight: 500;
 }
 
 footer .f-content .yak li {
-    text-align: center;
+    text-align: left;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 13px;
     width: 140px;
     margin: 0;
     line-height: 24px;
@@ -502,11 +596,13 @@ footer .f-content .yak li .private {
     font-size: 1rem;
     color: black;
     font-weight: 500;
+    font-size: 13px;
 }
 
 
 footer .f-content .icon {
     display: flex;
+    padding: 0 30px;
 }
 
 footer .f-content .icon .facebook {
